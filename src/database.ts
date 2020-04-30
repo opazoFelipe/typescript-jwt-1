@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 dotenv.config();
 import mongoose from 'mongoose';
-import { SERVER_ADDRESS } from '../src/keys'
+import { SERVER_ADDRESS } from './keys';
 
 const URI: string = process.env.SERVER_ADDRESS || SERVER_ADDRESS;
 mongoose.connect(URI, {
